@@ -2,6 +2,15 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    items = [[],[]]
+    @order.line_items.each do |x|
+      items[0].push(x.product_id)
+      items[1].push(x.quantity)
+    end
+    @products ||= Product.where('id IN (?)', items[0] ).each_with_index.map {|product,i| { product:product, quantity: items[1][i].to_s } }
+    @products.each do |x|
+      p x[:product]
+    end
   end
 
   def create
