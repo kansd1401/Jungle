@@ -1,5 +1,12 @@
 <h1>Login</h1>
-
+<% if @error != nil %>
+          <div class="alert alert-danger">
+            <strong>Login attempt failed</strong>
+            <ul>
+                <li><%= @error %></li>
+            </ul>
+          </div>
+<% end %>
 <%= form_tag '/login' do %>
 
   Email: <%= text_field_tag :email %>

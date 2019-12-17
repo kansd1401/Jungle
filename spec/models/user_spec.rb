@@ -48,4 +48,21 @@ RSpec.describe User, type: :model do
       expect(subject.errors.full_messages.first).to eq "Password is too short (minimum is 5 characters)"
     end
   end
+
+  describe '.authenticate_with_credentials' do
+    it "should return false when email and password don't match" do
+      @user = described_class.create(name: "Spaghetti",last_name: "Man", email: "123@mammamia.com",password: "12345", password_confirmation: "12345" )
+      email = @user.email
+      password = "1231234"
+      expect(User.authenticate_with_credentials(email,password)).to be_nil
+    end
+    it "should return user when email and password correct" do
+      @user = described_class.create(name: "Spaghetti",last_name: "Man", email: "123@mammamia.com",password: "12345", password_confirmation: "12345" )
+      email = @user.email
+      password = @user.password
+      result = User.authenticate_with_credentials(email,password)
+      expect(result.id).to eq @user.id
+    end
+  end
+
 end
