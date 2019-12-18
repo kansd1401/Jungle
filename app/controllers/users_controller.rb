@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    #downcases and trims the email before adding to database
     @user.email.strip!
     @user.email.downcase!
     if @user.save
