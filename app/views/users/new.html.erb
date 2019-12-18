@@ -12,12 +12,26 @@
 <% end %>
 
 <%= form_for :user, url: '/users' do |f| %>
-
-  Name: <%= f.text_field :name %>
-  Last Name: <%= f.text_field :last_name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+  <label>Name</label>
+  <div class="form-group">
+    <%= f.text_field :name %>
+  </div>
+  <label>Last name</label>
+  <div class="form-group">
+    <%= f.text_field :last_name %>
+  </div>
+  <label>Email</label>
+  <div class="form-group">
+    <%= f.text_field :email %>
+  </div>
+  <label>Password</label>
+  <div class="form-group">
+    <%= f.password_field :password %>
+  </div>
+  <label>Password Confirmation</label>
+  <div class="form-group">
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <%= f.submit "Register", class: 'btn btn-primary' %>
 
 <% end %>
