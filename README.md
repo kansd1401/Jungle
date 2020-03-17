@@ -4,11 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-!["Screenshot of editing URLs page"](https://github.com/kansd1401/tweeter/blob/master/screenshots/main.png)
-!["Screenshot of users URLs page"](https://github.com/kansd1401/tweeter/blob/master/screenshots/categorized.png)
-!["Screenshot of adding a new URL page"](https://github.com/kansd1401/tweeter/blob/master/screenshots/cart.png)
-!["Screenshot of registery page"](https://github.com/kansd1401/tweeter/blob/master/screenshots/admin.png)
-!["Screenshot of registery page"](https://github.com/kansd1401/tweeter/blob/master/screenshots/admin-products.png)
+!["Screenshot of editing URLs page"](https://github.com/kansd1401/Jungle/blob/master/screenshots/main.png)
+!["Screenshot of users URLs page"](https://github.com/kansd1401/Jungle/blob/master/screenshots/categorized.png)
+!["Screenshot of adding a new URL page"](https://github.com/kansd1401/Jungle/blob/master/screenshots/cart.png)
+!["Screenshot of registery page"](https://github.com/kansd1401/Jungle/blob/master/screenshots/admin.png)
+!["Screenshot of registery page"](https://github.com/kansd1401/Jungle/blob/master/screenshots/admin-products.png)
 
 ## Setup
 
